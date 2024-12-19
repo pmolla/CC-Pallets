@@ -1,0 +1,42 @@
+<odoo>
+    <template id="portal_my_cuenta_corriente" inherit_id="portal.portal_my_home" name="Portal Cuenta Corriente Menu">
+        <xpath expr="//ul[contains(@class, 'nav')]" position="inside">
+            <li>
+                <a t-att-class="'active' if request.httprequest.path.startswith('/my/cuenta_corriente') else ''"
+                    t-att-href="'/my/cuenta_corriente'">
+                    Cuenta Corriente
+                </a>
+            </li>
+        </xpath>
+    </template>
+
+
+    <!-- List View -->
+    <template id="portal_cuenta_corriente_list" name="Portal Cuenta Corriente List">
+        <t t-call="portal.layout">
+            <div class="container">
+                <h1>Cuenta Corriente</h1>
+                <ul>
+                    <t t-foreach="records" t-as="record">
+                        <li>
+                            <a t-att-href="'/my/cuenta_corriente/%s' % record.id">
+                                <t t-esc="record.x_studio_pallet"/>  <!-- Adjust field name -->
+                            </a>
+                        </li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+
+    <!-- Detail View -->
+    <template id="portal_cuenta_corriente_detail" name="Portal Cuenta Corriente Detail">
+        <t t-call="portal.layout">
+            <div class="container">
+                <h1><t t-esc="record.x_studio_pallet"/></h1>
+                <p><strong>Customer:</strong> <t t-esc="record.x_studio_client"/></p>
+                <!-- Add more fields if needed -->
+            </div>
+        </t>
+    </template>
+</odoo>
