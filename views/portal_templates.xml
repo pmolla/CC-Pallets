@@ -16,15 +16,4 @@
             </div>
         </t>
     </template>
-
-    <!-- Detail View -->
-    <template id="portal_cuenta_corriente_detail" name="Portal Cuenta Corriente Detail">
-        <t t-call="portal.layout">
-            <div class="container">
-                <h1><t t-esc="record.name"/></h1> <!-- Replace 'name' with a valid field -->
-                <p><strong>Client:</strong> <t t-esc="record.x_studio_cliente"/></p>
-                <!-- Add more fields as needed -->
-            </div>
-        </t>
-    </template>
 </odoo>

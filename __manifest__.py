@@ -5,7 +5,6 @@
 
     'data': [
         'security/ir.model.access.csv',
-        'security/ir.rule.xml',
         'views/portal_templates.xml',
         'views/portal_menu.xml',  # Load this after related dependencies
     ],

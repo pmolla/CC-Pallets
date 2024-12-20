@@ -1,15 +1,13 @@
 <odoo>
-    <!-- Define the Action -->
-    <record id="action_portal_cuenta_corriente" model="ir.actions.act_url">
-        <field name="name">Cuenta Corriente</field>
-        <field name="url">/my/cuenta_corriente</field>
-        <field name="target">self</field>
-    </record>
-
-    <!-- Define the Menu Item -->
-    <menuitem id="menu_portal_cuenta_corriente"
-              name="Cuenta Corriente"
-              parent="portal.menu_portal"
-              action="action_portal_cuenta_corriente"
-              sequence="10" />
+    <!-- Extend the "My Account" Menu -->
+    <template id="portal_my_cuenta_corriente" inherit_id="portal.portal_my_home" name="Portal Cuenta Corriente Menu">
+        <xpath expr="//div[@id='o_portal_my_home']/ul" position="inside">
+            <li>
+                <a t-att-class="'active' if request.httprequest.path.startswith('/my/cuenta_corriente') else ''"
+                   t-att-href="'/my/cuenta_corriente'">
+                    Cuenta Corriente
+                </a>
+            </li>
+        </xpath>
+    </template>
 </odoo>
