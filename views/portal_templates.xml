@@ -1,8 +1,8 @@
 <odoo>
     <!-- Inherit the portal homepage and add a new menu item -->
     <template id="portal_my_cuenta_corriente" inherit_id="portal.portal_my_home" name="Portal Cuenta Corriente Menu">
-        <!-- Adjust the xpath to match an existing element -->
-        <xpath expr="//div[@id='o_portal_container']" position="inside">
+        <!-- Locate an existing element in the parent view -->
+        <xpath expr="//div[contains(@class, 'o_portal_my_home')]" position="inside">
             <ul>
                 <li>
                     <a t-att-class="'active' if request.httprequest.path.startswith('/my/cuenta_corriente') else ''"
@@ -43,4 +43,3 @@
         </t>
     </template>
 </odoo>
-
