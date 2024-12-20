@@ -1,23 +1,15 @@
 <odoo>
-    <!-- Recreate the Portal Menu -->
-    <menuitem id="portal.menu_portal"
-              name="Portal"
-              parent=""
-              sequence="0"
-              groups="base.group_portal"/>
-
-    <!-- Add Your Custom Menu -->
-    <menuitem id="menu_portal_cuenta_corriente"
-              name="Cuenta Corriente"
-              parent="portal.menu_portal"
-              action="action_portal_cuenta_corriente"
-              sequence="10"/>
-
-    <!-- Action for the Menu -->
+    <!-- Define the Action -->
     <record id="action_portal_cuenta_corriente" model="ir.actions.act_url">
         <field name="name">Cuenta Corriente</field>
         <field name="url">/my/cuenta_corriente</field>
         <field name="target">self</field>
     </record>
-</odoo>
 
+    <!-- Define the Menu Item -->
+    <menuitem id="menu_portal_cuenta_corriente"
+              name="Cuenta Corriente"
+              parent="portal.menu_portal"
+              action="action_portal_cuenta_corriente"
+              sequence="10" />
+</odoo>
