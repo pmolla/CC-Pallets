@@ -1,8 +1,9 @@
 <odoo>
     <record id="rule_cuenta_corriente_portal" model="ir.rule">
         <field name="name">Cuenta Corriente Portal Access</field>
-        <field name="model_id" ref="model_x_cuenta_corriente"/>
+        <field name="model_id" ref="studio_customization.model_x_cuenta_corriente"/>
         <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
         <field name="domain_force">[('x_studio_client', '=', user.partner_id.id)]</field>
     </record>
 </odoo>
+
