@@ -7,7 +7,7 @@ class CuentaCorrientePortal(http.Controller):
     def portal_cuenta_corriente(self, **kwargs):
         user = request.env.user
         cuenta_corriente_records = request.env['x_cuenta_corriente'].sudo().search([
-            ('x_studio_client', '=', user.partner_id.id)  # Adjust field names if needed
+            ('x_studio_cliente', '=', user.partner_id.id)  # Adjust field names if needed
         ])
         return request.render('custom_portal_cuenta_corriente.portal_cuenta_corriente_list', {
             'records': cuenta_corriente_records,
