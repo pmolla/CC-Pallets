@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cuenta_corriente_portal,x_cuenta_corriente portal user access,model_x_cuenta_corriente,base.group_portal,1,0,0,0
+access_cuenta_corriente_user,access.cuenta.corriente.user,studio_customization.model_x_cuenta_corriente,base.group_user,1,0,0,0
+
