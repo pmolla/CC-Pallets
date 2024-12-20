@@ -1,19 +1,4 @@
 <odoo>
-    <!-- Inherit the portal homepage and add a new menu item -->
-    <template id="portal_my_cuenta_corriente" inherit_id="portal.portal_my_home" name="Portal Cuenta Corriente Menu">
-        <!-- Locate an existing element in the parent view -->
-        <xpath expr="//div[contains(@class, 'o_portal_my_home')]" position="inside">
-            <ul>
-                <li>
-                    <a t-att-class="'active' if request.httprequest.path.startswith('/my/cuenta_corriente') else ''"
-                        t-att-href="'/my/cuenta_corriente'">
-                        Cuenta Corriente
-                    </a>
-                </li>
-            </ul>
-        </xpath>
-    </template>
-
     <!-- List View -->
     <template id="portal_cuenta_corriente_list" name="Portal Cuenta Corriente List">
         <t t-call="portal.layout">
@@ -23,7 +8,7 @@
                     <t t-foreach="records" t-as="record">
                         <li>
                             <a t-att-href="'/my/cuenta_corriente/%s' % record.id">
-                                <t t-esc="record.x_studio_pallet"/> <!-- Adjust the field name if needed -->
+                                <t t-esc="record.name"/> <!-- Replace 'name' with a valid field -->
                             </a>
                         </li>
                     </t>
@@ -36,8 +21,8 @@
     <template id="portal_cuenta_corriente_detail" name="Portal Cuenta Corriente Detail">
         <t t-call="portal.layout">
             <div class="container">
-                <h1><t t-esc="record.x_studio_pallet"/></h1>
-                <p><strong>Customer:</strong> <t t-esc="record.x_studio_cliente"/></p>
+                <h1><t t-esc="record.name"/></h1> <!-- Replace 'name' with a valid field -->
+                <p><strong>Client:</strong> <t t-esc="record.x_studio_cliente"/></p>
                 <!-- Add more fields as needed -->
             </div>
         </t>
