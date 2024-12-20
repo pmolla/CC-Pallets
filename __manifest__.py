@@ -4,7 +4,7 @@
     'author': 'Pablo Molla',
     'category': 'Custom',
     'summary': 'Portal View for Cuenta Corriente',
-    'depends': ['portal'],  # Replace with the actual Studio module name
+    'depends': ['base','portal'],  # Replace with the actual Studio module name
     'data': [
         'views/portal_templates.xml',
         'security/ir.model.access.csv',
