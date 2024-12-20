@@ -1,6 +1,6 @@
 {
     'name': 'Portal Cuenta Corriente',
-    'version': '1.0',
+    'version': '1.01',
     'author': 'Pablo Molla',
     'category': 'Custom',
     'summary': 'Portal View for Cuenta Corriente',
