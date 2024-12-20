@@ -37,7 +37,7 @@
         <t t-call="portal.layout">
             <div class="container">
                 <h1><t t-esc="record.x_studio_pallet"/></h1>
-                <p><strong>Customer:</strong> <t t-esc="record.x_studio_client"/></p>
+                <p><strong>Customer:</strong> <t t-esc="record.x_studio_cliente"/></p>
                 <!-- Add more fields as needed -->
             </div>
         </t>
