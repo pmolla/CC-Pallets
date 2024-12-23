@@ -1,0 +1,27 @@
+<template id="portal_inventory_movements" inherit_id="portal.portal_my_home">
+    <xpath expr="//div[@class='o_portal_my_home']" position="inside">
+        <h3>Movimientos de Inventario</h3>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Fecha</th>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                </tr>
+            </thead>
+            <tbody>
+                <t t-foreach="inventory_moves" t-as="move">
+                    <tr>
+                        <td><t t-esc="move.product_id.name"/></td>
+                        <td><t t-esc="move.product_uom_qty"/></td>
+                        <td><t t-esc="move.date"/></td>
+                        <td><t t-esc="move.location_id.name"/></td>
+                        <td><t t-esc="move.location_dest_id.name"/></td>
+                    </tr>
+                </t>
+            </tbody>
+        </table>
+    </xpath>
+</template>

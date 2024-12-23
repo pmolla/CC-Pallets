@@ -7,12 +7,13 @@
             <field name="arch" type="xml">
                 <!-- Insertar un enlace adicional en la sección de la clase o_portal_my_home -->
                 <xpath expr="//div[@class='o_portal_my_home']" position="inside">
-                    <div class="row mt-3">
-                        <a class="btn btn-primary" href="/cuenta_corriente">
-                            Mi Cuenta Corriente
-                        </a>
-                    </div>
-                </xpath>
+                    <a class="btn btn-primary mt-3" href="/my/cuenta_corriente">
+                         Mi Cuenta Corriente
+                    </a>
+                    <a class="btn btn-secondary mt-3" href="/my/cuenta_corriente/movements">
+                        Movimientos de Inventario
+                    </a>
+<               /xpath>
             </field>
         </record>
     </data>
