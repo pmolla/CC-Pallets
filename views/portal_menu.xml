@@ -8,7 +8,7 @@
                 <!-- Insertar un enlace adicional en la sección de la clase o_portal_my_home -->
                 <xpath expr="//div[@class='o_portal_my_home']" position="inside">
                     <div class="row mt-3">
-                        <a class="btn btn-primary" href="/mi_cuenta_corriente">
+                        <a class="btn btn-primary" href="/cuenta_corriente">
                             Mi Cuenta Corriente
                         </a>
                     </div>
