@@ -25,7 +25,7 @@
                                 <td><t t-esc="pallet.name"/></td>
                                 <td><t t-esc="pallet.description"/></td>
                                 <td>
-                                    <a href="/my/cc_pallets/<t t-esc='pallet.id'/>" class="btn btn-primary btn-sm">
+                                    <a t-att-href="'/my/cc_pallets/' + str(pallet.id)" class="btn btn-primary btn-sm">
                                         <i class="fa fa-eye"></i> View
                                     </a>
                                 </td>
