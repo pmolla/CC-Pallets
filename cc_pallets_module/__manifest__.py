@@ -10,6 +10,7 @@
         'security/ir.model.access.csv',
         'views/cc_pallets_views.xml',
         'views/menu.xml',
+        'views/cc_pallets_portal_templates.xml',
     ],
     'installable': True,
     'application': True,

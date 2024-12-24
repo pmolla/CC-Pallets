@@ -1,0 +1,48 @@
+<odoo>
+    <template id="portal_cc_pallets_list" name="CC Pallets Documents" inherit_id="portal.portal_my_home" priority="20">
+        <xpath expr="//div[@id='portal_my_documents']" position="inside">
+            <a class="btn btn-secondary mt-3" href="/my/cc_pallets">
+                <i class="fa fa-archive"></i> My CC Pallets
+            </a>
+        </xpath>
+    </template>
+
+    <template id="cc_pallets_portal_page" name="My CC Pallets">
+        <t t-call="portal.portal_layout">
+            <div class="container">
+                <h1>My CC Pallets</h1>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="cc_pallets" t-as="pallet">
+                            <tr>
+                                <td><t t-esc="pallet.name"/></td>
+                                <td><t t-esc="pallet.description"/></td>
+                                <td>
+                                    <a href="/my/cc_pallets/<t t-esc='pallet.id'/>" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-eye"></i> View
+                                    </a>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </template>
+
+    <template id="cc_pallets_portal_view" name="View CC Pallet">
+        <t t-call="portal.portal_layout">
+            <div class="container">
+                <h1><t t-esc="cc_pallet.name"/></h1>
+                <p><strong>Description:</strong> <t t-esc="cc_pallet.description"/></p>
+            </div>
+        </t>
+    </template>
+</odoo>
