@@ -7,6 +7,7 @@
     'website': 'https://github.com/pmolla/cc-pallets',
     'depends': ['base'],
    'data': [
+    'views/menu.xml',
     'views/cc_pallets_views.xml',
     ],
     'installable': True,

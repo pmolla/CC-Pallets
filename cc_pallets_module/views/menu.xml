@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Root Menu -->
+    <menuitem id="menu_cc_pallets_root" name="CC Pallets" sequence="10" />
+
+    <!-- Submenu -->
+    <menuitem id="menu_cc_pallets_model" name="Pallets" parent="menu_cc_pallets_root" action="action_cc_pallets" sequence="20" />
+
+    <!-- Action -->
+    <record id="action_cc_pallets" model="ir.actions.act_window">
+        <field name="name">CC Pallets</field>
+        <field name="res_model">cc.pallets.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
