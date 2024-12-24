@@ -10,7 +10,7 @@
                     <a class="btn btn-secondary mt-3" href="/my/cuenta_corriente/movements">
                         Movimientos de Inventario
                     </a>
-<               /xpath>
+                </xpath>
             </field>
         </record>
     </data>
