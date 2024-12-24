@@ -1,12 +1,14 @@
 <odoo>
+    <!-- Add a button to the portal home page -->
     <template id="portal_cc_pallets_list" name="CC Pallets Documents" inherit_id="portal.portal_my_home" priority="20">
-        <xpath expr="//div[@id='portal_my_documents']" position="inside">
+        <xpath expr="//div[@class='o_portal_docs']" position="inside">
             <a class="btn btn-secondary mt-3" href="/my/cc_pallets">
                 <i class="fa fa-archive"></i> My CC Pallets
             </a>
         </xpath>
     </template>
 
+    <!-- Define the page for the list of CC Pallets -->
     <template id="cc_pallets_portal_page" name="My CC Pallets">
         <t t-call="portal.portal_layout">
             <div class="container">
@@ -37,6 +39,7 @@
         </t>
     </template>
 
+    <!-- Define the detailed view of a single CC Pallet -->
     <template id="cc_pallets_portal_view" name="View CC Pallet">
         <t t-call="portal.portal_layout">
             <div class="container">
@@ -46,3 +49,4 @@
         </t>
     </template>
 </odoo>
+
