@@ -6,7 +6,7 @@
     'author': 'Pablo Molla',
     'website': 'https://github.com/pmolla/cc-pallets',
     'depends': ['base'],
-   'data': [
+    'data': [
     'views/menu.xml',
     'views/cc_pallets_views.xml',
     ],
