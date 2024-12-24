@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cc_pallets_model_user,access.cc.pallets.model,model_cc_pallets_model,base.group_user,1,1,1,1
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cc_pallets_portal_user,access.cc.pallets.portal.user,model_cc_pallets_model,base.group_portal,1,0,0,0
+access_cc_pallets_model_user,access.cc.pallets.model.user,model_cc_pallets_model,base.group_user,1,1,1,1
+access_cc_pallets_model_portal,access.cc.pallets.model.portal,model_cc_pallets_model,base.group_portal,1,0,0,0
+access_cc_pallets_model_admin,access.cc.pallets.model.admin,model_cc_pallets_model,base.group_system,1,1,1,1
