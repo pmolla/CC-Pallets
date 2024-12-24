@@ -5,7 +5,10 @@
     'summary': 'Custom module for CC Pallets project.',
     'author': 'Pablo Molla',
     'website': 'https://github.com/pmolla/cc-pallets',
-    'depends': ['base'],
+    'depends': [
+        'base',
+        'portal',  # Ensure portal is included for portal features
+    ],
     'data': [
         'security/ir.model.access.csv',
         'views/cc_pallets_views.xml',
