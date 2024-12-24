@@ -7,6 +7,7 @@
     'website': 'https://github.com/pmolla/cc-pallets',
     'depends': ['base'],
     'data': [
+        'security/ir.model.access.csv',
         'views/cc_pallets_views.xml',
         'views/menu.xml',
     ],
