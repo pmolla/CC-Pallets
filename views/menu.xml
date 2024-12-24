@@ -1,6 +1,0 @@
-<record id="menu_cuentacorriente_root" model="ir.ui.menu">
-    <field name="name">Cuenta Corriente</field>
-    <field name="sequence">10</field>
-    <field name="parent_id" ref="base.menu_root"/>
-    <field name="action" ref="action_cuentacorriente"/>
-</record>
