@@ -1,7 +1,7 @@
 <odoo>
     <!-- Add a button to the portal home page -->
     <template id="portal_cc_pallets_list" name="CC Pallets Documents" inherit_id="portal.portal_my_home" priority="20">
-        <xpath expr="//div[@class='o_portal_docs']" position="inside">
+        <xpath expr="//div[@class='o_portal_my_home']" position="inside">
             <a class="btn btn-secondary mt-3" href="/my/cc_pallets">
                 <i class="fa fa-archive"></i> My CC Pallets
             </a>
