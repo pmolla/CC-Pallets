@@ -1,5 +1,5 @@
 from odoo import http
-from odoo.http import request, root
+from odoo.http import request
 
 class CCPalletsPortal(http.Controller):
 
@@ -9,7 +9,7 @@ class CCPalletsPortal(http.Controller):
         # Obtener los pallets asociados al usuario actual
         cc_pallets = request.env['cc.pallets'].search([('partner_id', '=', request.env.user.partner_id.id)])
         
-        return request.render('your_module_name.cc_pallets_portal_page', {
+        return request.render('cc_pallets_module.cc_pallets_portal_page', {
             'cc_pallets': cc_pallets
         })
 
@@ -21,6 +21,6 @@ class CCPalletsPortal(http.Controller):
         if not pallet or pallet.partner_id.id != request.env.user.partner_id.id:
             return request.render('website.404')
         
-        return request.render('your_module_name.cc_pallets_portal_view', {
+        return request.render('cc_pallets_module.cc_pallets_portal_view', {
             'cc_pallet': pallet
         })
