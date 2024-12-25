@@ -7,7 +7,8 @@
     'website': 'https://github.com/pmolla/cc-pallets',
     'depends': [
         'base',
-        'portal',  # Ensure portal is included for portal features
+        'portal',
+        'website',
     ],
     'data': [
         'security/ir.model.access.csv',
