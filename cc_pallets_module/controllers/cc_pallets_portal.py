@@ -1,13 +1,6 @@
 from odoo import http
 from odoo.http import request, root
 
-class CCPalletsRoutes(http.Controller):
-    @http.route('/debug/routes', type='http', auth='user', website=True)
-    def debug_routes(self, **kwargs):
-        routes = root.get_routes()
-        matched_routes = [route for route in routes if 'cc_pallets' in route]
-        return request.make_response(f"Matched routes: {matched_routes}")
-
 class CCPalletsPortal(http.Controller):
 
     @http.route(['/my/cc_pallets'], type='http', auth='user', website=True)
