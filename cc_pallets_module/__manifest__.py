@@ -1,6 +1,6 @@
 {
     'name': 'CC Pallets Module',
-    'version': '1.0',
+    'version': '1.2',
     'category': 'Custom',
     'summary': 'Custom module for CC Pallets project.',
     'author': 'Pablo Molla',
