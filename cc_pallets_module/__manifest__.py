@@ -12,9 +12,9 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/cc_pallets_portal_page.xml',
         'views/cc_pallets_portal_view.xml',
         'views/menu.xml',
-        'views/cc_pallets_portal_page.xml',
     ],
     'installable': True,
     'application': True,

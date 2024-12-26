@@ -39,6 +39,7 @@
         </t>
     </template>
 
+
     <!-- Define the detailed view of a single CC Pallet -->
     <template id="cc_pallets_portal_view" name="View CC Pallet">
         <t t-call="portal.portal_layout">
