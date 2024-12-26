@@ -12,9 +12,10 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/menu.xml',
+        'views/cc_pallets_views.xml',  # Agrega este si creaste un archivo separado
         'views/cc_pallets_portal_page.xml',
         'views/cc_pallets_portal_view.xml',
-        'views/menu.xml',
     ],
     'installable': True,
     'application': True,
