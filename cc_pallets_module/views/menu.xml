@@ -4,7 +4,7 @@
     <menuitem id="menu_cc_pallets_root" name="CC Pallets" sequence="10" />
 
     <!-- Submenu -->
-    <menuitem id="menu_cc_pallets_model" name="Pallets" parent="menu_cc_pallets_root" action="action_cc_pallets" sequence="20" />
+    <menuitem id="menu_cc_pallets_model" name="Pallets" parent="menu_cc_pallets_root" action="cc_pallets_module.action_cc_pallets" sequence="20" />
 
     <!-- Action -->
     <record id="action_cc_pallets" model="ir.actions.act_window">
