@@ -9,7 +9,7 @@ class CCPalletsPortal(http.Controller):
         # Obtener los pallets asociados al usuario actual
         cc_pallets = request.env['cc.pallets.model'].search([('contact_id', '=', request.env.user.partner_id.id)])
         
-        return request.render('cc_pallets_module.cc_pallets_portal_page.list', {
+        return request.render('cc_pallets_module.cc_pallets_portal_page', {
             'cc_pallets': cc_pallets
         })
 

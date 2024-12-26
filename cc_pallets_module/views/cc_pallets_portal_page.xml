@@ -9,7 +9,7 @@
     </template>
 
     <!-- Define the page for the list of CC Pallets -->
-    <template id="cc_pallets_portal_page.list" name="My CC Pallets">
+    <template id="cc_pallets_portal_page" name="My CC Pallets">
         <t t-call="portal.portal_layout">
             <div class="container">
                 <h1>My CC Pallets</h1>
