@@ -9,9 +9,10 @@ class CCPalletsPortal(http.Controller):
         # Obtener los pallets asociados al usuario actual
         cc_pallets = request.env['cc.pallets.model'].search([('contact_id', '=', request.env.user.partner_id.id)])
         
-        return request.render('cc_pallets_module.cc_pallets_portal_page', {
+        return request.render('cc_pallets_module.cc_pallets_portal_page.list', {
             'cc_pallets': cc_pallets
         })
+
 
     @http.route(['/my/cc_pallets/<int:pallet_id>'], type='http', auth='user', website=True)
     def portal_cc_pallet_view(self, pallet_id, **kwargs):
