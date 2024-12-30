@@ -2,8 +2,8 @@
     <!-- Add a button to the portal home page -->
     <template id="portal_cc_pallets_list" name="CC Pallets Documents" inherit_id="portal.portal_my_home" priority="20">
         <xpath expr="//div[@class='o_portal_my_home']" position="inside">
-            <a class="btn btn-secondary mt-3" href="/my/cc_pallets">
-                <i class="fa fa-archive"></i> My CC Pallets
+            <a class="btn custom-button mt-3" href="/my/cc_pallets">
+                <i class="fa fa-cubes"></i> Sus Pallets
             </a>
         </xpath>
     </template>
@@ -48,6 +48,39 @@
             </div>
         </t>
     </template>
+
+    <!-- Add custom CSS for the button -->
+    <template id="portal_custom_styles" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+            <style>
+                /* Custom button styling */
+                .custom-button {
+                    background-color: gray; /* Gray background */
+                    color: white; /* White text color */
+                    font-size: 1.5rem; /* Bigger font size */
+                    padding: 15px 30px; /* Larger padding for a bigger button */
+                    border: none; /* Remove border */
+                    border-radius: 10px; /* Rounded corners */
+                    display: inline-flex; /* Flexbox for icon + text alignment */
+                    align-items: center; /* Center items vertically */
+                    gap: 10px; /* Space between icon and text */
+                    text-decoration: none; /* Remove underline */
+                    transition: background-color 0.3s ease; /* Smooth hover effect */
+                }
+
+                /* Hover effect for the button */
+                .custom-button:hover {
+                    background-color: darkgray; /* Darker gray on hover */
+                }
+
+                /* Icon styling */
+                .custom-button i {
+                    font-size: 1.8rem; /* Adjust icon size */
+                }
+            </style>
+        </xpath>
+    </template>
 </odoo>
+
 
 
